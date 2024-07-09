@@ -9,15 +9,19 @@ body {
 }
 
 p,
-h2,
-h5 {
-    color: white;
+h3,
+h6 {
     margin: 0;
+}
+
+h3 {
+    color: white;
+    font-weight: 600;
 }
 
 .container {
     background: hsl(0, 0%, 12%);
-    width: 22%;
+    width: 348px;
     height: 560px;
     margin: auto;
     margin-top: 130px;
@@ -37,18 +41,60 @@ h5 {
     margin-top: 40px;
 }
 
-.name,
-.location {
-    margin-left: 90px;
+.name-and-location {
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .location {
     font-size: 17.4px;
     margin-top: 7px;
+    color: hsl(75, 94%, 57%);
+}
+
+.job-title {
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .job-title p {
-    margin-left: 30px;
+    color: white;
     margin-top: 20px;
-    color: hsl(75, 94%, 57%);
+    font-size: 13px;
+}
+
+.contacts {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contacts button {
+    color: aliceblue;
+    background: hsl(0, 0%, 20%);
+    margin-bottom: 15px;
+    padding: 11px 80px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.contacts button:hover {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.contacts button:active {
+    background: hsl(75, 94%, 57%);
+    color: black;
+}
+
+p,
+h3,
+h6,
+img,
+button:hover {
+    cursor: pointer;
 }
